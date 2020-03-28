@@ -1,0 +1,25 @@
+2020-03-28 14:42:16,144 INFO [root] [test_login_params.py(test01_login_success:30)] - 登录成功_响应体数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'b3911ff7-b5a2-4554-a301-63671f86c320'}
+2020-03-28 14:42:16,178 INFO [root] [test_login_params.py(test01_login_success:30)] - 密码错误_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,229 INFO [root] [test_login_params.py(test01_login_success:30)] - 账号不存在_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,337 INFO [root] [test_login_params.py(test01_login_success:30)] - 手机号码有英文字符_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,461 INFO [root] [test_login_params.py(test01_login_success:30)] - 手机号码有特殊字符_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,661 INFO [root] [test_login_params.py(test01_login_success:30)] - 手机号码为空_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,685 INFO [root] [test_login_params.py(test01_login_success:30)] - 密码为空_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,706 INFO [root] [test_login_params.py(test01_login_success:30)] - 多参-多出1个参数_响应体数据为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '2e29114c-9dd9-474f-a885-ad929e769e20'}
+2020-03-28 14:42:16,727 INFO [root] [test_login_params.py(test01_login_success:30)] - 少参-缺少mobile_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,746 INFO [root] [test_login_params.py(test01_login_success:30)] - 少参-缺少password_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,764 INFO [root] [test_login_params.py(test01_login_success:30)] - 无参_响应体数据为：{'success': False, 'code': 99999, 'message': '抱歉，系统繁忙，请稍后重试！', 'data': None}
+2020-03-28 14:42:16,783 INFO [root] [test_login_params.py(test01_login_success:30)] - 错误参数_响应体数据为：{'success': False, 'code': 20001, 'message': '用户名或密码错误', 'data': None}
+2020-03-28 14:42:16,804 INFO [root] [test_emp2.py(test01_emp_operation:30)] - 打印登录接口响应体数据：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': 'cdad40cc-7cfc-4f9e-a798-8cc9351bc4b9'}
+2020-03-28 14:42:16,804 INFO [root] [test_emp2.py(test01_emp_operation:34)] - 员工模块接口请求头为：{'Content-Type': 'application/json', 'Authorization': 'Bearer cdad40cc-7cfc-4f9e-a798-8cc9351bc4b9'}
+2020-03-28 14:42:16,804 INFO [root] [emp_api.py(add_emp:22)] - 添加员工URL:http://182.92.81.159/api/sys/user
+2020-03-28 14:42:16,804 INFO [root] [emp_api.py(add_emp:23)] - 添加员工请求头:{'Content-Type': 'application/json', 'Authorization': 'Bearer cdad40cc-7cfc-4f9e-a798-8cc9351bc4b9'}
+2020-03-28 14:42:16,804 INFO [root] [emp_api.py(add_emp:24)] - 添加员工请求体:{'username': '珠穆拉囊tyy', 'mobile': '18985641562', 'timeOfEntry': '2020-03-16', 'formOfEmployment': 2, 'departmentName': 'snowsnow', 'departmentId': '1226092852421177344', 'correctionTime': '2020-03-15T16:00:00.000Z'}
+2020-03-28 14:42:16,853 INFO [root] [test_emp2.py(test02_add_emp:44)] - 添加员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1243790497528762368'}}
+2020-03-28 14:42:16,853 INFO [root] [test_emp2.py(test02_add_emp:49)] - EMP_ID的值为：1243790497528762368
+2020-03-28 14:42:16,940 INFO [root] [test_emp2.py(test03_query_emp:58)] - 查询员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1243790497528762368', 'mobile': '18985641562', 'username': '珠穆拉囊tyy', 'password': 'f09ee918c18bcdd0ea72f280683ae4b1', 'enableState': 1, 'createTime': None, 'companyId': '1', 'companyName': '传智播客', 'departmentId': '1226092852421177344', 'timeOfEntry': '2020-03-16T00:00:00.000+0000', 'formOfEmployment': 2, 'workNumber': None, 'formOfManagement': None, 'workingCity': None, 'correctionTime': '2020-03-15T16:00:00.000+0000', 'inServiceStatus': None, 'departmentName': 'snowsnow', 'roleIds': [], 'staffPhoto': None}}
+2020-03-28 14:42:17,083 INFO [root] [test_emp2.py(test04_modify_emp:66)] - 修改员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': {'id': '1243790497528762368'}}
+2020-03-28 14:42:18,060 INFO [root] [test_emp2.py(test04_modify_emp:78)] - 执行的SQL语句为：select username from bs_user where id=1243790497528762368
+2020-03-28 14:42:18,078 INFO [root] [test_emp2.py(test04_modify_emp:82)] - 执行SQL语句的结果为：('珠穆拉拉',)
+2020-03-28 14:42:18,079 INFO [root] [test_emp2.py(test05_delete_emp:96)] - 删除员工接口的url为：http://182.92.81.159/api/sys/user/1243790497528762368
+2020-03-28 14:42:18,106 INFO [root] [test_emp2.py(test05_delete_emp:99)] - 删除员工的结果为：{'success': True, 'code': 10000, 'message': '操作成功！', 'data': None}
